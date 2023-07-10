@@ -19,7 +19,7 @@ if question != "":
         response = openai.ChatCompletion.create(
             model = "gpt-3.5-turbo",
             max_tokens=50,  # Limit the response length
-            temperature=0.7
+            temperature=0.7,
             messages=[
                 {
                     "role":"system", "content":'''
