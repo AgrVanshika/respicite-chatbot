@@ -30,7 +30,9 @@ if question != "":
                 },
                 {"role": "system", "content": question}
             ]
-    )
+            max_tokens=50,  # Limit the response length
+            temperature=0.7
+    )        
     st.success("Done!")
     #st.markdown(response['choices'][0]['message']['content'])
     st.markdown(
