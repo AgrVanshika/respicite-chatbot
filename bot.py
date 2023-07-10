@@ -18,7 +18,7 @@ if question != "":
     with st.spinner("Generation your response"):
         response = openai.ChatCompletion.create(
             model = "gpt-3.5-turbo",  
-            max_tokens = 200,
+            max_tokens = 500,
             temperature=0.7,
             messages=[
                 {
