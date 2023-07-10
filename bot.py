@@ -32,4 +32,10 @@ if question != "":
             ]
     )
     st.success("Done!")
-    st.markdown(response['choices'][0]['message']['content'])
+    #st.markdown(response['choices'][0]['message']['content'])
+    st.markdown(
+        f'<div style="height: 600px; overflow-y: auto;">'
+        f'{response["choices"][0]["message"]["content"]}'
+        f'</div>',
+        unsafe_allow_html=True
+    )
