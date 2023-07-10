@@ -1,6 +1,8 @@
 import streamlit as st
 import openai
 
+st.write("I am here to help!")
+
 user_input = st.text_input("Enter your key")
 #openaikey = "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"
 openai.api_key = user_input
