@@ -1,6 +1,8 @@
 import streamlit as st
 import openai
 
+st.set_page_config(layout="wide")
+
 st.write("""
 # I am here to help!
 """)
