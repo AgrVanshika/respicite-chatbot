@@ -1,3 +1,5 @@
 [theme]
 primaryColor = "#FF4B4B"
 backgroundColor = "#E6D8E6"
+base="light"
+wideMode=false
