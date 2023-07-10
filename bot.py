@@ -17,7 +17,9 @@ question = st.text_input("Hi! What is your question?")
 if question != "":
     with st.spinner("Generation your response"):
         response = openai.ChatCompletion.create(
-            model = "gpt-3.5-turbo",        
+            model = "gpt-3.5-turbo",
+            max_tokens=50,  # Limit the response length
+            temperature=0.7
             messages=[
                 {
                     "role":"system", "content":'''
@@ -30,8 +32,7 @@ if question != "":
                 },
                 {"role": "system", "content": question}
             ]
-            #max_tokens=50,  # Limit the response length
-            temperature=0.7
+           
     )        
     st.success("Done!")
     #st.markdown(response['choices'][0]['message']['content'])
