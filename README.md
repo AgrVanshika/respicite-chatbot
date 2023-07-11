@@ -1,2 +1,2 @@
 # respicite
-a chatbot for to automate the report generation and counseling processes.
+a chatbot to automate the report generation and counseling processes.
