@@ -15,7 +15,7 @@ openai.api_key = user_input
 question = st.text_input("Hi! What is your question?")
 #messages.append("role":"system", "content": question)
 if question != "":
-    with st.spinner("Generation your response"):
+    with st.spinner("Generating your response"):
         response = openai.ChatCompletion.create(
             model = "gpt-3.5-turbo",  
             max_tokens = 500,
