@@ -8,7 +8,6 @@ st.write("""
 """)
 
 user_input = st.text_input("Enter your key")
-#openaikey = "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"
 openai.api_key = user_input
 
 #messages=[]
